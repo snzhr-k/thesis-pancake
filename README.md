@@ -13,6 +13,14 @@ Use Austin, TX housing and economic conditions in 2023-06 to predict
 Austin, TX typical rent in 2023-07.
 ```
 
+Current modeling objective:
+
+```text
+Compare whether economic change features improve next-month regional rent
+prediction compared with a simple neural network using only current levels and
+housing-history features.
+```
+
 ## Outputs
 
 - `data/processed/metro_housing_economic_panel.csv`  
@@ -122,6 +130,30 @@ rent_yoy_pct
 home_value_lag_12m
 home_value_yoy_pct
 price_to_annual_rent
+```
+
+Current neural-network experiments:
+
+```text
+1. Naive baseline
+   Prediction: next month's rent equals current month's rent.
+
+2. Simple network
+   Inputs: base housing and economic level features.
+   Target: next-month rent change.
+
+3. Delta-feature network
+   Inputs: base features plus economic change features.
+   Target: next-month rent change.
+```
+
+Economic change features are created from the existing economic columns. For
+example:
+
+```text
+unemployment_rate_change_1m = current unemployment - previous month's unemployment
+mortgage_30yr_rate_change_3m = current mortgage rate - mortgage rate 3 months ago
+building_permits_pct_change_1m = percentage change in building permits from previous month
 ```
 
 Metadata columns such as `RegionName`, `StateName`, and `date` are useful for
