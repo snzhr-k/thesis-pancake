@@ -1,0 +1,23 @@
+column,description
+RegionID,Zillow metro identifier.
+SizeRank,Zillow metro size rank.
+RegionName,Metro area name.
+RegionType,Zillow geography type.
+StateName,State abbreviation/name where Zillow provides it.
+date,Monthly observation date.
+zori_rent,"Zillow Observed Rent Index, typical rent in dollars."
+zhvi_home_value,"Zillow Home Value Index, typical home value in dollars."
+mortgage_30yr_rate,30-year fixed mortgage average rate from FRED.
+unemployment_rate,US unemployment rate from FRED.
+cpi,Consumer Price Index for all urban consumers from FRED.
+fed_funds_rate,Effective federal funds rate from FRED.
+building_permits,New privately-owned housing units authorized from FRED.
+housing_starts,New privately-owned housing units started from FRED.
+cpi_yoy_pct,Year-over-year CPI percentage change.
+building_permits_yoy_pct,Year-over-year building permits percentage change.
+rent_lag_1m,Prior-month ZORI rent for the same metro.
+rent_lag_12m,Rent 12 months earlier for the same metro.
+rent_yoy_pct,Year-over-year rent percentage change.
+home_value_lag_12m,Home value 12 months earlier for the same metro.
+home_value_yoy_pct,Year-over-year home value percentage change.
+price_to_annual_rent,Home value divided by annualized rent.

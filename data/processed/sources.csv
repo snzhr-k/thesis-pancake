@@ -1,0 +1,9 @@
+dataset,source
+zori_rent,https://files.zillowstatic.com/research/public_csvs/zori/Metro_zori_uc_sfrcondomfr_sm_month.csv
+zhvi_home_value,https://files.zillowstatic.com/research/public_csvs/zhvi/Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv
+mortgage_30yr_rate,https://fred.stlouisfed.org/series/MORTGAGE30US
+unemployment_rate,https://fred.stlouisfed.org/series/UNRATE
+cpi,https://fred.stlouisfed.org/series/CPIAUCSL
+fed_funds_rate,https://fred.stlouisfed.org/series/FEDFUNDS
+building_permits,https://fred.stlouisfed.org/series/PERMIT
+housing_starts,https://fred.stlouisfed.org/series/HOUST
